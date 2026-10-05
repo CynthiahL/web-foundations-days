@@ -1,0 +1,53 @@
+:root {
+  --bg: #f4f6f8;
+  --text: #222;
+  --accent: #0ba184;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #088a70;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* Dark theme */
+body.dark {
+  --bg: #222;
+  --text: #f4f6f8;
+  --accent: #e67e22;
+}
+
+/* Counter states */
+.warning {
+  color: orange;
+}
+
+.over {
+  color: red;
+  font-weight: bold;
+}
